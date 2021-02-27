@@ -52,9 +52,15 @@ class Turno{
         this.mes = mes;
         this.turno = turno;
     }
-
-    
-    
+    getDia = function (){
+        return this.dia;
+    }
+    getMes = function (){
+        return this.mes;
+    }
+    getTurno = function (){
+        return this.turno;
+    }
 }
 
 bienvenida();
@@ -68,3 +74,6 @@ confirmacion();
 
 var turno1 = new Turno (dia, mes, turno);
 
+console.log("El dia del turno1 es: " + turno1.getDia());
+console.log("El mes del turno1 es: " + turno1.getMes());
+console.log("El turno del turno1 es: " + turno1.getTurno());
